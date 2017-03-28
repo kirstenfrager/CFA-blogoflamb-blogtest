@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.0.2'
 # gem for facebook login
 gem 'omniauth-facebook'
+# social sharing gem
+gem 'social-share-button'
 # gem for user login logout
 gem 'devise'
 # gem for navbar

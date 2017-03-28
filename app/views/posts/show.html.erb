@@ -17,6 +17,7 @@
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+<%= social_share_button_tag(@post.title, :url => "http://facebook.com") %>
 
 <%= render 'comments/form', comment: @comment %>
 
