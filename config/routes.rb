@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :posts
+  get 'contact', to: 'contact#index'
+
+  post 'contact', to: 'contact#mail'
+
+  resources :posts do
+    resources :comments
+  end
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   root 'pages#home'
 
