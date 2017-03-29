@@ -1,10 +1,9 @@
-<nav>
+<!-- <nav>
   <div class="nav-wrapper">
     <a href="/" class="brand-logo center">The Blog of Lamb</a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
       <li><a href="/">Home</a></li>
       <li><a href="/posts">Posts</a></li>
-      <!-- <li><a href="/posts">Current user: <%= current_user.inspect %></a></li> -->
       <% if user_signed_in? %>
         <li>
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -15,5 +14,38 @@
         </li>
       <% end %>
     </ul>
+  </div>
+</nav> -->
+
+
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item">
+        <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+      </a>
+      <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
+      <a class="nav-item is-tab is-hidden-mobile">Features</a>
+      <a class="nav-item is-tab is-hidden-mobile">Pricing</a>
+      <a class="nav-item is-tab is-hidden-mobile">About</a>
+    </div>
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+      <a class="nav-item is-tab is-hidden-tablet is-active">Home</a>
+      <a class="nav-item is-tab is-hidden-tablet">Features</a>
+      <a class="nav-item is-tab is-hidden-tablet">Pricing</a>
+      <a class="nav-item is-tab is-hidden-tablet">About</a>
+      <a class="nav-item is-tab">
+        <figure class="image is-16x16" style="margin-right: 8px;">
+          <img src="http://bulma.io/images/jgthms.png">
+        </figure>
+        Profile
+      </a>
+      <a class="nav-item is-tab">Log out</a>
+    </div>
   </div>
 </nav>

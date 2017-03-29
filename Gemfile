@@ -8,8 +8,11 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
+gem "bulma-rails"
 # gem for facebook login
 gem 'omniauth-facebook'
+# changes the url to a nicer look
+gem 'friendly_id'
 # social sharing gem
 gem 'social-share-button'
 # gem for user login logout
