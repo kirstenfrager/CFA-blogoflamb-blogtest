@@ -8,7 +8,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
-gem "bulma-rails"
+gem 'bulma-rails'
+gem 'rolify'
+gem 'pundit'
 gem 'simple_form'
 # gem for facebook login
 gem 'omniauth-facebook'

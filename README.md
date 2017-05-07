@@ -1,24 +1,24 @@
-# README
+# Blog of Lamb
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails application testing out different features for a blog platform. This application is just a test to try out new things.
 
-Things you may want to cover:
+# Current Features Tested
 
-* Ruby version
+  - Facebook login with Omniauth
+  - Create a Post
+  - Create a Comment on a Post
+  - Mailer installation with MailGun
+  - Friendly IDs
+  - Admin buttons "edit, destroy"
+  - Social share and like buttons for posts
 
-* System dependencies
+Gems used to create these functions:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+gem 'omniauth-facebook'
+gem 'friendly_id'
+gem 'simple_form'
+gem 'rolify'
+gem 'pundit'
+gem 'social-share-button'
+```
